@@ -1,7 +1,7 @@
 /*                                                                          */
-/*                   Funciton Library                                       */
+/*                          Function Library                                */
 /*                                                                          */
-/*      Message Last Edited - 5/24/2017  9:46AM CST                         */
+/*      Message Last Edited - 5/24/2017  5:36PM CST                         */
 /*                                                                          */
 /*      Hey There! Thanks for reading this little notifier.                 */
 /*        Here's the jist of what this is:                                  */
@@ -19,6 +19,8 @@
 /*                                                                          */
 /*                                                                          */
 /*      5/24/2017  - Created Unreferenced Function Library                  */
+/*      5/24/2017  - Changed to Function Library and moved some things      */
+/*                   to this file from Holotank.c                           */
 /*                                                                          */
 /*                                                                          */
 /*                           Table of Contents                              */
