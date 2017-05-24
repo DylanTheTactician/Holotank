@@ -65,6 +65,7 @@ task usercontrol()
 {
   while (true)
   {
+  	DriveButtons();
     DriveShift();
     TankSpeedShift();
   }

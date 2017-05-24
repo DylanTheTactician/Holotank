@@ -1,3 +1,5 @@
+#pragma config(Sensor, dgtl1,  FrontPistons,   sensorDigitalOut) // pragmas for my commands.
+#pragma config(Sensor, dgtl2,  BackPistons,    sensorDigitalOut) // If you're using this, change your #pragma's here.
 /*                                                                          */
 /*                          Function Library                                */
 /*                                                                          */
@@ -48,15 +50,6 @@
 #include "Variables.h" // Includes the variables used within these functions
 #include "Definitions.h" // Includes the definitions used within these functions
 #include "SmartMotorLib.c" // Includes jpearman's Smart Motor Library commands
-
-bool PistonPlaceholder;
-#ifndef FrontPistons
-#define FrontPistons PistonPlaceholder
-#endif
-
-#ifndef BackPistons
-#define BackPistons PistonPlaceholder
-#endif
 
 /*      Section 2 - Things I've (the Author) written                         */
 
@@ -205,7 +198,7 @@ void ArcadeTankSwitch()
   else
     ArcadeDrive(GlobalSmallThresh, GlobalLargeThresh); // If True, Arcade
 }
-void DriveShifter()
+void DriveShift()
 {
   if (DriveType == 0) // Tank
   {
@@ -227,19 +220,18 @@ void DriveShifter()
   {
     SensorValue(FrontPistons) = 1;
     SensorValue(BackPistons) = 1;
-    DragonDrive();
+    ArcadeTankSwitch();
   }
   else // Reverse Dragon
   {
     SensorValue(FrontPistons) = 0;
     SensorValue(BackPistons) = 0;
-    DragonDrive();
+    ArcadeTankSwitch();
   }
 }
 
-void DriveShift()
+void DriveButtons()
 {
-	DriveShifter();
     if(vexRT[Btn8U])
     {
       TankSpeed = true;
