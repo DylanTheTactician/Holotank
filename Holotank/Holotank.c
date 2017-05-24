@@ -3,7 +3,7 @@
 //*	ROBOTC, WHY ARE YOU DUMB AND REQUIRE THIS TO BE AT THE TOP *//
 //* IT MAKES MY FORMATTING LOOK BAD	*//
 // also trust me this looks nice in RobotC's interface, I'll fix it later
-
+// AND YES I'M USING JPEARMAN'S LIBRARY, I'LL DO THE THINGS I'M SUPPOSED TO DO WHEN USING THAT LATER
 /*																																					*/
 /*															Holotank.c																	*/
 /*																																					*/
